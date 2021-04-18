@@ -6,7 +6,6 @@ export default function () {
         <Head>
             <title>My page title</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-            <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
         </Head>
     )
 }
