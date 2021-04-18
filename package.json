@@ -11,6 +11,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage":"http://minhsudoit.github.io/nextjs-app",
   "dependencies": {
     "antd": "^4.14.0",
     "axios": "^0.21.1",

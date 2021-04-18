@@ -26,7 +26,6 @@ export default function MyApp({ Component, pageProps }) {
       }) : compose;
   const enhancer = composeEnhancers(
     applyMiddleware(thunk),
-    // other store enhancers if any
   );
 
   const store = createStore(rootReducer, enhancer)
