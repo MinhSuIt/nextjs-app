@@ -6,8 +6,8 @@ import { omit } from 'ramda'
 export default function BestSeller() {
     const { addItem } = useCart();
     const [featureFeatureProduct, setFeatureFeatureProduct] = useState([])
-    useEffect(async() => {
-        const products =await request('get', 'products', indexNewestFeatureProduct)
+    useEffect(async () => {
+        const products = await request('get', 'products', indexNewestFeatureProduct)
         setFeatureFeatureProduct(products.data)
         // debugger //sử dụng debugger để ko có lỗi khi render
     }, [])
@@ -31,9 +31,9 @@ export default function BestSeller() {
                                             return (
                                                 <div className="col-lg-3 col-sm-6" key={item.id}>
                                                     <div className="single_product_item">
-                                                        <Link href={`/product/${item.slug}/${item.id}`} ><img src="img/product/product_1.png" alt="" /></Link>
+                                                        <img src="img/product/product_1.png" alt="" />
                                                         <div className="single_product_text">
-                                                            <Link href={`/product/${item.slug}/${item.id}`} ><h4>{item.name}</h4></Link>
+                                                            <h4>{item.name}</h4>
                                                             <h3>{item.price}</h3>
                                                             <a
                                                                 // href="#"

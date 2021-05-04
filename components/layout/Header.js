@@ -27,6 +27,7 @@ export default function Header() {
         updateItemQuantity,
         totalItems,
         removeItem,
+        emptyCart, 
     } = useCart();
     // const { data: headerCategories, isError: errorHeaderCategories } = useFetch('categories', indexHeaderCategories)
     const [headerCategories, setHeaderCategories] = useState([])
@@ -94,7 +95,7 @@ export default function Header() {
                     type: 'SETAUTHBOOLEAN', auth: auth
                 })
                 localStorage.setItem('auth', JSON.stringify(auth))
-
+                emptyCart()
                 router.push('/');
             }
         } catch (err) {
@@ -174,7 +175,7 @@ export default function Header() {
         const menu = (
             <Menu>
                 <Menu.Item>
-                    <Link href="user/profile">
+                    <Link href="/user/profile">
                         <a target="" rel="noopener noreferrer">
                             Profile
                         </a>

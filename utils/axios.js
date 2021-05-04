@@ -1,7 +1,7 @@
 import axios from "axios";
 
-// const baseURL = "http://laraveladminbagisto.test/api/"
-const baseURL = "http://13.212.84.135/api/"
+// const baseURL = "http://guycrazy.xyz/api/"
+const baseURL = "http://laraveladminbagisto.test/api/"
 let headers = {
     'Content-Type': 'application/json',//dữ liệu gửi đi dạng json
 }
